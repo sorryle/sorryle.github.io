@@ -107,5 +107,5 @@ skkil:
     skills: [Python, SQL, html, Liquidj, java, bat]
   -
     name: 测试环境
-    skills: [Nginx, Tomcat, Linux, Android, Web]
+    skills: [Nginx, Tomcat, Linux, Android, Web, Git]
 
