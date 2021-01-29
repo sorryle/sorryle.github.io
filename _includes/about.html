@@ -1,0 +1,35 @@
+<div class="about row">
+
+    <div class="col-md-8">
+
+        <h2>关于我</h2>
+
+        <p>我喜欢编程，编程时需要各种技术，就要逼着自己去学习。当你思考一个技术时，并且解决技术难题时，你会得到极大的满足。人生苦短，快乐第一。</p>
+
+        <h2>联系方式</h2>
+
+        <ul>
+            <li>Email：<a href="mailto:{{ site.email }}" target="_top">{{ site.email }}</a></li>
+            <li>Github：<a href="{{ site.github_url }}">{{ site.github_url }}</a></li>
+        </ul>
+
+        <h2>技术栈</h2>
+        {% for _ in site.skkil %}
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">{{ _.name }}</h3>
+            </div>
+            <div class="panel-body">
+                {% for keyword in _.skills %}
+                <button class="btn btn-default" type="button">{{ keyword }}</button>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+<div class="col-md-4">
+    {% include sidebar-popular-repo.html %}
+</div>
+
+
+</div>

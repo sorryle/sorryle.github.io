@@ -1,0 +1,25 @@
+<h3 class="sidebar-title">分  类</h3>
+<div id="blog-categories">
+    <ul class="list-group">
+        {% for category in site.categories %}
+        <li class="list-group-item">
+            {% assign class_name = category.first %}
+            {% for class_value in site.class%}
+                {% if class_value.name == class_name %}
+                    <a href='{{ class_value.href }}.html' title="{{ class_name }}">{{ class_name }}</a>
+                {% endif %}
+            {% endfor %}
+            <span class="badge">{{ category[1].size }}</span>
+        </li>
+
+        {% endfor %}
+    </ul>
+
+</div>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $("#blog-categories li").css('text-transform','capitalize')
+    });
+
+</script>

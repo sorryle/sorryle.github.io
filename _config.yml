@@ -1,0 +1,111 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+repository: sorryle/sorryle.github.io
+quotes: 人生苦短,及时行乐
+title: 迷乐
+name: 迷乐
+email: 2602250460@qq.com
+location: China
+company: 九畅科技
+#company_url: http://www.gfi.fr/en/
+github_url: https://github.com/sorryle
+description: 本站是迷乐的技术分享博客，内容涵盖学习笔记，Python，自动化测试，IT博客
+keywords: 迷乐,技术,博客,学习笔记,Python,自动化测试,IT博客,SQL,IT网站。
+favicon: favicon.png # Image must be in assets/images
+
+url: http://www.sorryle.com # the base hostname & protocol for your site
+
+## Gem
+gems:
+  - jekyll-paginate
+  - jekyll-geo-pattern
+  - rouge
+  - kramdown
+  - jekyll-github-metadata
+
+
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+lsi:         false
+excerpt_separator: "\n\n"
+
+source:      .
+destination: ./_site
+
+quiet:    false
+defaults: []
+kramdown:
+  input: GFM
+  enable_coderay: true
+
+# Disque
+disque: httpdongchuangithubio.disqus.com
+
+# Pagination
+paginate: 10
+paginate_path: 'page:num'
+
+# Navigation
+navs:
+  -
+    href: /
+    label: 首页
+
+  -
+    href: /open-source
+    label: 开源
+
+  -
+    href: /blog
+    label: 博客
+
+  -
+    href: /bookmark
+    label: 书签
+
+  -
+    href: /about
+    label: 关于
+  -
+    href: /system_structure
+    lable: 操作系统
+
+class:
+  -
+    name: 系统结构
+    href: /system_structure
+  -
+    name: Python
+    href: /Python
+  -
+    name: 博客
+    href: /my_blog_index
+
+# Sidebar to show popular repo
+side_bar_repo_limit: 5 # Number of repos to show
+
+# Google Analytics
+analytics :
+  provider : google
+  google :
+      tracking_id : 'UA-72165600-1'
+
+skkil:
+  -
+    name: 测试工具
+    skills: [Appium, Pytest, allure-report, Fiddler, scrcpy, requests, selenium, unittest, Jemeter, Postman, newman, 禅道]
+  -
+    name: 熟悉语言
+    skills: [Python, SQL, html, Liquidj, java, bat]
+  -
+    name: 测试环境
+    skills: [Nginx, Tomcat, Linux, Android, Web]
+
