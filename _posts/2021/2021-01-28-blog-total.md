@@ -428,3 +428,112 @@ graph RL
 ![img](/../assets/images/2021/2021-01-27-blog-total/20200708163549448.png)
 
 ![img](/../assets/images/2021/2021-01-27-blog-total/20200708163549451.png)
+
+
+
+## Git
+
+git是一个及其有用的东西，但他让我感觉到崩溃，我不明白这个东西如何使用，就胡乱操作，但是一直出问题，所以我决定好好学习一下这个工具。
+
+
+
+### 基本概念
+
+[学习地址](https://www.runoob.com/git/git-workspace-index-repo.html) - 菜鸟教程的基本概念
+
+- **工作区：**就是你在电脑里能看到的目录。
+- **暂存区：**英文叫 stage 或 index。一般存放在 **.git** 目录下的 index 文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。
+- **版本库：**工作区有一个隐藏目录 **.git**，这个不算工作区，而是 Git 的版本库。
+
+
+
+### Git命令格式:
+
+ `git 命令 选项 参数`
+
+
+
+
+
+
+
+### 基本操作
+
+[学习地址](https://www.runoob.com/git/git-basic-operations.html) - 菜鸟教程的Git基本操作
+
+**仓库命令**
+
+-  `git inti ` - 初始化仓库
+
+-  `git remote ` 查看远程仓库 
+   - `add (origin_name) (repositories_path)` - 连接远程仓库  <font color='red'>连接前要先初始化仓库</font>
+     - `(origin_name)`  版本库名称，自己的，随便取
+     - `(repositories_path)`   类似这种两种，任意一种：
+       - `https://github.com/sorryle/sorryle.github.io.git` 
+       - `git@github.com:sorryle/sorryle.github.io.git`
+-  `git clone ` - 拷贝一份远程仓库
+
+**提交与修改**
+
+- `git status ` - 查看仓库当前状态，显示有变更的文件
+- `git add .` - 添加所有文件到暂存区
+- `git commit ` - 将暂存区内容添加到仓库中
+- `git reset (HEAD)` - 回退版本
+  - `HEAD`可以通过`git log查询`
+- `git rm` - 删除工作区文件
+  - `--cached` 暂存区删除文件，工作区则不做出改变
+- `git mv` - 移动或重命名工作区文件
+
+**提交日志**
+
+- `git log`  查看例是提交记录
+- `git blame <file>` 以列表形式查看指定文件的历史修改记录
+
+**远程操作**
+
+- `git remote (command)` - 远程仓库操作
+- `git fetch ` - 从远程获取代码库
+- `git pull`  - 下载远程代码并合并
+  - `(orgin) (branchname)` 
+    - `(orgin)` 远程仓库别名
+    - `(branchname)` 分支名称
+- `git push ` - 上传远程代码并合并
+  - `(orgin) (branchname)` 
+    - `(orgin)` 远程仓库别名
+    - `(branchname)` 分支名称
+  - `-f` 强制推送
+  - `--delete origin (oldName)` 删除远程的旧分支
+
+
+
+
+
+### 分支命令
+
+[学习地址](https://www.runoob.com/git/git-branch.html) - 菜鸟教程的Git分支操作
+
+
+
+- `git branch`  - 列出分支，并且以`*`标注当前分支
+
+- `-r`   列出所有分支包含本地
+
+- `git branch`
+
+  - ` (branchname)` - 创建分支
+  - `-d (branchname)` - 删除分支
+  - `-m (oldname) (newName)`  重任命分支
+
+- `git checkout` 
+
+  - `(branchname)` - 切换分支
+  - `-b (branchname)`  创建新分支并移动到新分支
+  - `.`  将暂存区所有文件替换到工作区
+  - `-- (filename)` 将暂存区指定文件替换到工作区
+  - `HEAD .`  将工作区和暂存区的<font color='red'>所有文件</font>替换成版本库里的文件
+  - `HEAD (filename)`  将工作区和暂存区的<font color='red'>指定文件</font>替换成版本库里的文件
+
+- `git merge (branchname)` - 合并分支到当前分支
+
+  
+

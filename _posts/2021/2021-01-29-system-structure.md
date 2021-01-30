@@ -1,17 +1,15 @@
 ---
 layout: post
 title: 系统结构第三章-中断系统
-category: 系统结构
-tags: [系统结构, 自考]
+category: 自考
+tags: [系统结构]
 excerpt: 系统结构第三章-中断系统的学习笔记
 typora-root-url: ..
 ---
 
+## 中断系统
 
-
-
-
-
+中断是一个系统中极其重要的功能。
 
 
 

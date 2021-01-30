@@ -1,22 +1,22 @@
 ---
 layout: page
-title: 系统结构
-titlebar: 系统结构
-subtitle: <span class="mega-octicon octicon-clippy"></span> &nbsp;&nbsp; 学习你的编写的程序是怎么运行的，如何让他运行的更好
-menu: 系统结构
+title: 自考
+titlebar: 自考
+subtitle: <span class="mega-octicon octicon-clippy"></span> &nbsp;&nbsp; 学习计算机的课程笔记，打计算机基础，方便自己以后学习应用层的东西时更简单，提升自己学历，毕竟没有能力的情况下这个社会还看你"学历"。
+menu: 自考
 css: ['blog-page.css']
-permalink: /system_structure
+permalink: /this_test
 ---
 
 <div class="row">
 
     <div class="col-md-8">
-
+    
         <!-- Blog list -->
         <ul id="posts-list">
             {% for post in site.posts %}
-            <!-- 判断如果界面的category属性是系统结构就添加进进行展示 -->
-             {% if post.category == '系统结构' %}
+            <!-- 判断如果界面的category属性是自考就添加进进行展示 -->
+             {% if post.category == '自考' %}
             <li class="posts-list-item">
                 <div class="posts-content">
                     <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
@@ -27,15 +27,15 @@ permalink: /system_structure
                 {% endif %}
             {% endfor %}
         </ul>
-
+    
         <!-- Pagination -->
         {% include pagination.html %}
-
+    
         <!-- Comments -->
         {% include disqus-comments.html %}
-
+    
     </div>
-
+    
     <div class="col-md-4">
         {% include sidebar-post-tag.html %}
     </div>
@@ -46,6 +46,6 @@ permalink: /system_structure
 
         // Enable bootstrap tooltip
         $("body").tooltip({ selector: '[data-toggle=tooltip]' });
-
+    
     });
 </script>

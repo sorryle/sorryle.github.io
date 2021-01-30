@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 系统结构第三章-存储
-category: 系统结构
-tags: [系统结构, 自考]
+category: 自考
+tags: [系统结构]
 excerpt: 系统结构第三章-存储 学习笔记
 ---
 

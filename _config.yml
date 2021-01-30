@@ -80,8 +80,8 @@ navs:
 
 class:
   -
-    name: 系统结构
-    href: /system_structure
+    name: 自考
+    href: /this_test
   -
     name: Python
     href: /Python

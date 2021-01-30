@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 系统结构第二章
-category: 系统结构
-tags: [系统结构，自考]
+category: 自考
+tags: [系统结构]
 excerpt: 系统结构第二章学习笔记
 ---
 
