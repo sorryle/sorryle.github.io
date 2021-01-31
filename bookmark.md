@@ -41,3 +41,10 @@ menu: 我的书签
 - [书栈网](https://www.bookstack.cn/) - 收录很多技术类书
 - [猫云](https://www.bootcdn.cn/) - 收录了很多前端开源项目，有`vue`、`jquery`的各种版本的`js`
 - [TseterHome](https://testerhome.com/) - 感觉上这是一个测试人很好用的一个社区
+
+- [LeetCode](https://leetcode-cn.com/) - 算法网站
+
+## 区块链
+
+ [币知](http://www.beezhi.com/) - 获取币的金融动向网站
+
