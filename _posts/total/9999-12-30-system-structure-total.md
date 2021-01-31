@@ -2,7 +2,7 @@
 layout: post
 title: 系统结构汇总
 category: 自考
-tags: [系统结构]
+tags: [Total, 系统结构]
 excerpt: 系统结构的学习笔记汇总
 ---
 

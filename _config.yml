@@ -87,7 +87,10 @@ class:
     href: /Python
   -
     name: 博客
-    href: /my_blog_index
+    href: /my_blog_index  
+  -
+    name: 区块链
+    href: /block_chain
 
 # Sidebar to show popular repo
 side_bar_repo_limit: 5 # Number of repos to show

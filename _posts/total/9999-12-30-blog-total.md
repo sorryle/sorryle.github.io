@@ -2,7 +2,7 @@
 layout: post
 title: 博客改造汇总
 category: 博客
-tags: [博客, javascript]
+tags: [Total]
 excerpt: 整个博客使用和改造过程的一个汇总
 typora-root-url: ..
 ---
