@@ -31,8 +31,6 @@ css: ['index.css', 'sidebar-popular-repo.css']
 
             <ol class="post-list">
                 {% for post in paginator.posts %}
-				{% assign data = post.date | date: "%Y/%m/%d" %}
-				{% if data < "2101/12/30" %}
                 <li class="post-list-item">
                     <h2 class="post-list-title">
                         <a class="hvr-underline-from-center" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
@@ -44,7 +42,6 @@ css: ['index.css', 'sidebar-popular-repo.css']
                         <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d" }}
                     </p>
                 </li>
-				{% endif %}
                 {% endfor %}
             </ol>
 
