@@ -80,7 +80,7 @@ navs:
 
 class:
   -
-    name: 自考
+    name: 自考计算机科学与技术
     href: /this_test
   -
     name: Python

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 系统结构第二章
-category: 自考
+category: 自考计算机科学与技术
 tags: [系统结构]
 excerpt: 系统结构第二章学习笔记
 ---
