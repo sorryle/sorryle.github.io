@@ -32,6 +32,8 @@ menu: 我的书签
 
 - [在线PS](https://ps.gaoding.com/#/) - 这是一个在线的PS网站，可以导出源文件，无水印
 - [draw.io](https://app.diagrams.net/) - 在线的流程图工具，也可以下载下来,软件是开源的
+- [Testin云测](https://new.ztestin.com/new/subject-two-study-bug) - 提BUG的基础知识
+- [Testin云测](https://new.ztestin.com/school/bug-exam) - 武测的界面
 
 
 
