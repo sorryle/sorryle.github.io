@@ -119,7 +119,6 @@ sequenceDiagram
 
 ```mermaid
 sequenceDiagram
-	autonumber
     participant CPU
     participant 通道
     participant 主存
