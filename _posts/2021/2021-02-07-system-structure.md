@@ -25,7 +25,7 @@ typora-root-url: ..
 
 
 
-通道传输速率成为Bps,又称为吞吐率，通道最大流量。
+通道传输速率成为Bps,又称为吞吐率、通道流量，是单位时间内传输的数据量。
 
 参数
 
@@ -41,23 +41,69 @@ k: 一个数据块包含的字节数，只有数组选择通道才有的参数
 
 T: 通道完成所有数据传输的总时长
 
+
+
+<font color='red'>`设：A、B两台设备需要传输10字节,选择时间1us，传输时间1us`</font>
+
 **字节多路通道**
 
-最大时间：
+总共传输耗时：
 $$
 T_{Byte} = (T_s+T_D) *p * n
+\\T_{Byte} = (1+1)*2*10 = 40_{us}
 $$
-最大速率
+极限流量计算公式
 $$
 f_{Max\_Byte} =\frac{pn}{(T_S+T_D)pn} =\frac{1}{T_S+T_D}
+\\f_{Max\_Byte} =\frac{2*10}{(1+1) *2*10}= \frac{1}{1+1} =0.5
 $$
 实际流量是连接这个通道上所有设备的数据传输率
 $$
 f_{BYTE} = \sum_{i=1}^pfi
+\\f_{BYTE} = \sum_{i=1}^2fi = 2*(10*2) = 40_{us}
 $$
+$f_i是第i台设备实际的传输速率$
+
+
+
+<font color='red'>`设：A、B两台设备需要传输10字节,选择时间1us，传输时间1us。传输块的字节数为2`</font>
+
 **数组多路通道**
+
+总共传输耗时：
 $$
-T_{Byte} = (T_s+T_D*k) *p*\frac{k}{n}
+T_{Bolck} = (\frac{T_s}{k}+T_D)*p*n
+\\T_{Bolck} = (\frac{1}{2} + 1)*2*10 = 30_{us}
+$$
+极限流量计算公式
+$$
+f_{Max\_Bolck} =\frac{pn}{(\frac{T_s}{k}+T_D)pn}=\frac{1}{\frac{T_s}{k}+T_D}
+\\f_{Max\_Bolck} = \frac{2*10}{30_{us}} = \frac{2}{3} \approx 0.6666
+$$
+实际流量是连接这个通道上的最大设备数据传输率
+$$
+f_{Bolck} = \max^{p}_{i=1}f_{i}
+$$
+$f_i是第i台设备实际的传输速率，j为通道号$
+
+<font color='red'>`设：A、B两台设备需要传输10字节,选择时间1us，传输时间1us。`</font>
+
+**选择通道**
+
+总共传输耗时：
+$$
+T_{Select} = (\frac{T_s}{n}+T_D)\times p\times n
+\\T_{Select} = (\frac{1}{10} + 1)\times2\times10 = 22_{us}
+$$
+
+极限流量计算公式
+$$
+f_{Max\_Bolck} =\frac{pn}{(\frac{T_s}{k}+T_D)pn}=\frac{1}{\frac{T_s}{k}+T_D}
+\\f_{Max\_Bolck} = \frac{2*10}{22_{us}} = \frac{10}{11} \approx 0.999
+$$
+实际流量是连接这个通道上的最大设备数据传输率
+$$
+f_{select·j}  = \max^{p}_{i=1}f_{i}
 $$
 
 
