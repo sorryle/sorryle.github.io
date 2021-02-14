@@ -32,7 +32,7 @@ gems:
 
 
 # Build settings
-markdown: kramdown
+#markdown: kramdown
 highlighter: rouge
 lsi:         false
 excerpt_separator: "\n\n"
