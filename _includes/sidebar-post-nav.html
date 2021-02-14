@@ -71,9 +71,11 @@
 </script>
 
 <script type="text/javascript">
-        $("script[type=\'math/tex\']").each(function() {
-            $(this).unwrap()
-            $(this).replaceWith( "<script type=\"math/tex; mode=display\">" + $(this).html() + "</script>" );
+        $('script[type="math/tex"]').each(function() {
+            $(this).attr("type", "math/tex; mode=display")
     });
 </script>
 
+
+
+<!--// <div class="MathJax_Display" style="text-align: center;">-->
