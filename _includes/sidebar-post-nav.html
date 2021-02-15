@@ -62,7 +62,7 @@
 
 </script>
 
-
+<!--把流程图的代码块替换成mermaid需要的div-->
 <script type="text/javascript">
         $('.language-mermaid').each(function() {
             $(this).unwrap()
@@ -70,6 +70,7 @@
     });
 </script>
 
+<!--数学公式，把段内公式渲染成公式块-->
 <script type="text/javascript">
         $('script[type="math/tex"]').each(function() {
             $(this).attr("type", "math/tex; mode=display")
@@ -78,4 +79,3 @@
 
 
 
-<!--// <div class="MathJax_Display" style="text-align: center;">-->
