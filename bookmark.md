@@ -8,8 +8,8 @@ menu: 我的书签
 ## 娱乐
 
 - [哔哩哔哩](https://www.bilibili.com/) - 大名鼎鼎的B站
-
 - [AGE动漫](https://www.agefans.net/) - 动漫网站，收录多数动漫资源，广告较少
+- [VIP影院](http://vip.sb/) - 枪版、盗版的电影/电视剧资源
 
 ## Common
 
