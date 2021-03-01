@@ -128,7 +128,3 @@ $$
 $$
 f_{max} = \sum^5_{i=1}f_{i\cdot j} = \frac{1}{25}+\frac{1}{25}+(\frac{1}{150}+\frac{1}{150}+\frac{1}{800}) \approx 0.095MB/s
 $$
-
-
-
-
