@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 系统结构第四章-高速缓冲器算法
+title: 系统结构第四章-高速缓冲器
 category: 自考计算机科学与技术
 tags: [系统结构]
-excerpt: 系统结构第四章-高速缓冲器算法
+excerpt: 系统结构第四章-高速缓冲器算法，Cache的替换算法，写入，一致性，缺失率，使用Cache提升性能的倍数
 typora-root-url: ..
 ---
 
