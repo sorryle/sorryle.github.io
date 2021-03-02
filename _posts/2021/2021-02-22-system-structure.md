@@ -52,7 +52,10 @@ graph TD
 
 ```mermaid
 graph TB
-	CPU --> 比较器1 & 比较器2 & 比较器3 & 比较器4
+	CPU --> 比较器1 
+	CPU --> 比较器2
+	CPU --> 比较器3
+	CPU --> 比较器4
 	比较器1 --> Cache1
 	比较器2 --> Cache2
 	比较器3 --> Cache3
