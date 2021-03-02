@@ -20,7 +20,7 @@ typora-root-url: ..
 ```mermaid
 graph TB 
 	a[CPU]-->|1拿着a页表a页号|b{TLB};
-	b-->|2|d[TLB有a页表a页号]
+	b-->|2|d[TLB有a页表a页号];
 	b-->|2|e[TLB没有a页表a页号];
 	e-->|拿着a页表a页号|c;
 	d & c-->|3|g[返回实际物理地址];
