@@ -74,9 +74,6 @@ navs:
   -
     href: /about
     label: 关于
-  -
-    href: /system_structure
-    lable: 操作系统
 
 class:
   -
