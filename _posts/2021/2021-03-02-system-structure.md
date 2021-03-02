@@ -4,7 +4,7 @@ title: 系统结构第五章-标量处理机
 category: 自考计算机科学与技术
 tags: [系统结构]
 excerpt: 重叠技术，流水线概念，时空图，五级流水线工作时序图，流水线的分类
-typora-root-url:..
+typora-root-url: ..
 ---
 
 
