@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 系统结构第四章-TLB
+title: 系统结构第四章-虚拟存储技术
 category: 自考计算机科学与技术
 tags: [系统结构]
-excerpt: 系统结构第四章-TLB
+excerpt: 系统结构第四章-TLB、段式管理、段页式管理、虚拟存储器的工作流程
 typora-root-url: ..
 ---
 
