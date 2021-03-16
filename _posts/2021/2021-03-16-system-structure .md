@@ -3,11 +3,9 @@ layout: post
 title: 系统结构第六章-向量处理机
 category: 自考计算机科学与技术
 tags: [系统结构]
-excerpt: 
+excerpt: 向量处理机，链接，向量
 typora-root-url: ..
 ---
-
-a
 
 > **向量处理器由向量数据表示的处理机**
 
