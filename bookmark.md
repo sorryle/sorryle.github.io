@@ -9,7 +9,7 @@ menu: 我的书签
 
 - [哔哩哔哩](https://www.bilibili.com/) - 大名鼎鼎的B站
 - [AGE动漫](https://www.agefans.net/) - 动漫网站，收录多数动漫资源，广告较少
-
+- [磁力搜索导航站](http://bashi5.org/) - 收录了多个磁力搜索的导航的站点
 
 
 ## Common
