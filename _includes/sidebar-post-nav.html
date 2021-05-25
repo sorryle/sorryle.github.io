@@ -8,21 +8,6 @@
 </div>
 
 <script type="text/javascript">
-	$(this).find("dt").click(function(){
-   var display =$(this).nextUntil("dt").css('display');
-   console.log(display)
-   if(display == 'inline' || display == 'block'){
-     $(this).nextUntil("dt").css({
-     display:'none'
-    })
-   }else{
-     $(this).nextUntil("dt").css({
-     display:'block'
-    })
-   }
-   
-  });
-
     $(document).ready(function(){
         $( "article h2" ).each(function( index ) {
             $(".post-directory dl").append("<dt><a class=\"jumper\" hre=#" +
