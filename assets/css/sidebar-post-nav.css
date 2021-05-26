@@ -17,7 +17,7 @@
 */
 .post-directory::-webkit-scrollbar-thumb{
     /*   display:none; */
-    background: #93b5cf;
+    background-color: #93b5cf;
 }
 .post-directory dt, dd{
     border-left: 5px solid #666;
