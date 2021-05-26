@@ -7,6 +7,9 @@
     height: 600px;
 }
 
+.post-directory::-webkit-scrollbar{
+    display:noe
+}
 .post-directory dt, dd{
     border-left: 5px solid #666;
     cursor: pointer;
