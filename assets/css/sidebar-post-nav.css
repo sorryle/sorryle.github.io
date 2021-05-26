@@ -6,13 +6,18 @@
     width: 300px;
     height: 600px;
 }
-
+/*
 .post-directory::-webkit-scrollbar{
-    /*   display:none; */
+       display:none; 
     background-color: #93b5cf;
     width: 16px;
     height: 16px;
         
+}
+*/
+.post-directory::-webkit-scrollbar-thumb{
+    /*   display:none; */
+    background: #93b5cf;
 }
 .post-directory dt, dd{
     border-left: 5px solid #666;
