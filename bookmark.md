@@ -35,8 +35,7 @@ menu: 我的书签
 - [draw.io](https://app.diagrams.net/) - 在线的流程图工具，也可以下载下来,软件是开源的
 - [Testin云测](https://new.ztestin.com/new/subject-two-study-bug) - 提BUG的基础知识
 - [Testin云测](https://new.ztestin.com/school/bug-exam) - 武测的界面
-
-
+- [因果图画法](https://blog.csdn.net/xionghuixionghui/article/details/68216564) - 如何画因果图的界面
 
 ## 技术网站
 
