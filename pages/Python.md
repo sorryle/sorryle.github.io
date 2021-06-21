@@ -16,7 +16,7 @@ permalink: /Python
         <ul id="posts-list">
             {% for post in site.posts %}
             <!-- 判断如果界面的category属性是Python就添加进进行展示 -->
-             {% if post.category == 'Python' %}
+             {% if post.category == 'code' %}
             <li class="posts-list-item">
                 <div class="posts-content">
                     <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
