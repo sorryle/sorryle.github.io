@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 程序设计
-titlebar: 程序设计
+title: 计算机语言程序设计
+titlebar: 计算机语言程序设计
 subtitle: <span class="mega-octicon octicon-clippy"></span> &nbsp;&nbsp; 各钟语言的程序设计笔记
-menu: 程序设计
+menu: 计算机语言程序设计
 css: ['blog-page.css']
 permalink: /code
 ---
@@ -15,12 +15,8 @@ permalink: /code
         <!-- Blog list -->
         <ul id="posts-list">
             {% for post in site.posts %}
-<<<<<<< HEAD:pages/Python.md
-            <!-- 判断如果界面的category属性是Python就添加进进行展示 -->
-=======
-            <!-- 判断如果界面的category属性是code就添加进进行展示 -->
->>>>>>> af8d5c16c490720e5823c6714416791e487e907f:pages/code.md
-             {% if post.category == 'code' %}
+            <!-- 判断如果界面的category属性是计算机语言程序设计就添加进进行展示 -->
+             {% if post.category == '计算机语言程序设计' %}
             <li class="posts-list-item">
                 <div class="posts-content">
                     <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
