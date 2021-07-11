@@ -77,10 +77,10 @@ navs:
 
 class:
   -
-    name: 自考计算机科学与技术
+    name: 自考计算机科学与技术 
     href: /this_test
   -
-    name: 程序设计
+    name: 计算机语言程序设计
     href: /code
   -
     name: 博客
