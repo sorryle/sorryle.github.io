@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Python
-titlebar: Python
-subtitle: <span class="mega-octicon octicon-clippy"></span> &nbsp;&nbsp; 学习Python的使用，语言只是工具，请不要迷失在其中
-menu: Python
+title: 程序设计
+titlebar: 程序设计
+subtitle: <span class="mega-octicon octicon-clippy"></span> &nbsp;&nbsp; 各钟语言的程序设计笔记
+menu: 程序设计
 css: ['blog-page.css']
-permalink: /Python
+permalink: /code
 ---
 
 <div class="row">
@@ -15,7 +15,11 @@ permalink: /Python
         <!-- Blog list -->
         <ul id="posts-list">
             {% for post in site.posts %}
+<<<<<<< HEAD:pages/Python.md
             <!-- 判断如果界面的category属性是Python就添加进进行展示 -->
+=======
+            <!-- 判断如果界面的category属性是code就添加进进行展示 -->
+>>>>>>> af8d5c16c490720e5823c6714416791e487e907f:pages/code.md
              {% if post.category == 'code' %}
             <li class="posts-list-item">
                 <div class="posts-content">

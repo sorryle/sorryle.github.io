@@ -80,8 +80,8 @@ class:
     name: 自考计算机科学与技术
     href: /this_test
   -
-    name: Python
-    href: /Python
+    name: 程序设计
+    href: /code
   -
     name: 博客
     href: /my_blog_index  
