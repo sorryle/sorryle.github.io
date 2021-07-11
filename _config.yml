@@ -83,10 +83,10 @@ class:
     name: 程序设计
     href: /code
   -
-    name: 博客
+    name: Blog
     href: /my_blog_index  
   -
-    name: 区块链
+    name: Test区块链
     href: /block_chain
 
 # Sidebar to show popular repo
