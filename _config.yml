@@ -85,7 +85,9 @@ class:
   -
     name: 博客
     href: /my_blog_index  
-
+  -
+    name: 数学
+    href: /math
 
 # Sidebar to show popular repo
 side_bar_repo_limit: 5 # Number of repos to show
