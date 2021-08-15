@@ -39,6 +39,9 @@ menu: 我的书签
 
 ## 技术网站
 
+- [Another infinity](http://mirrors.ustc.edu.cn/) - 有Linux镜像源可以获取
+- [MSDN,我告诉你](https://msdn.itellyou.cn/) - Windows系统镜像获取，Office软件获取
+
 - [V2EX](https://www.v2ex.com) - 一个和睦的技术交流网站
 - [书栈网](https://www.bookstack.cn/) - 收录很多技术类书
 - [猫云](https://www.bootcdn.cn/) - 收录了很多前端开源项目，有`vue`、`jquery`的各种版本的`js`
@@ -49,4 +52,10 @@ menu: 我的书签
 
 -  [币知](http://www.beezhi.com/) - 获取币的金融动向网站
 - [挖矿是如何产生比特币的](http://www.beezhi.com/baike/2894.html) - 比特币的诞生与历程，通过类比的方式讲述：为什么会出现，出现后发生了什么，工作机制
+
+
+
+**文章记录**
+
+- [CentOS 8上安装配置Apache/httpd服务并启用Nginx反向代理](https://blog.csdn.net/ldy/article/details/104165171/)
 
