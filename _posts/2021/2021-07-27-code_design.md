@@ -248,5 +248,5 @@ the result is:15
 
 ### C语言的数据类型及其关系图
 
-[数据类型思维导图]([sorryle.github.io/data_type.xmind at main · sorryle/sorryle.github.io · GitHub](https://github.com/sorryle/sorryle.github.io/blob/main/file/data_type.xmind))
+[数据类型逻辑图](https://github.com/sorryle/sorryle.github.io/blob/main/file/data_type.xmind)
 
