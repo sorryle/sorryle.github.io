@@ -36,6 +36,7 @@ menu: 我的书签
 - [Testin云测](https://new.ztestin.com/new/subject-two-study-bug) - 提BUG的基础知识
 - [Testin云测](https://new.ztestin.com/school/bug-exam) - 武测的界面
 - [因果图画法](https://blog.csdn.net/xionghuixionghui/article/details/68216564) - 如何画因果图的界面
+- [闪电VPN](https://yaofan.cc/lighting/) - 梯子
 
 ## 技术网站
 

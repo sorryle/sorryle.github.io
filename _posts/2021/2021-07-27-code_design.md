@@ -212,9 +212,7 @@ the result is:15
 
 ### C语言的运行步骤
 
-![image-20210823063135329](../../assets/images/2021/2021-07-27-code_design%60/image-20210823063135329.png)
-
-
+![img](https://www.sorryle.com/assets/images/2021/2021-07-27-code_design%60/image-20210823063135329.png)
 
 ### C程序的调试
 
@@ -248,5 +246,4 @@ the result is:15
 
 ### C语言的数据类型及其关系图
 
-[数据类型逻辑图](https://github.com/sorryle/sorryle.github.io/blob/main/file/data_type.xmind)
-
+<a href='/assets/files/file'>数据类型逻辑图</a>

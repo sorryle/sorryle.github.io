@@ -1954,7 +1954,7 @@ graph TD
 >
 > 拿这样可以0和其他处理单元都连一条线吗？答案是不行的。电路太复杂了。
 
-![image-20210321161927979](../../assets/images/2021/2021-01-23-system-structure-one%60/image-20210321161927979.png)
+![image-20210321161927979](../../assets/images/2021/2021-01-23-system-structure-one/image-20210321161927979.png)
 
 
 
