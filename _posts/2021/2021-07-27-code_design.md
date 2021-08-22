@@ -246,4 +246,4 @@ the result is:15
 
 ### C语言的数据类型及其关系图
 
-<a href='/assets/files/file'>数据类型逻辑图</a>
+<a href='/assets/files/file/date_type.xmind'>数据类型逻辑图</a>
