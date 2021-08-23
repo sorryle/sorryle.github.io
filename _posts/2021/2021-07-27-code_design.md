@@ -212,7 +212,7 @@ the result is:15
 
 ### C语言的运行步骤
 
-![img](https://www.sorryle.com/assets/images/2021/2021-07-27-code_design%60/image-20210823063135329.png)
+![image-20210823081514719](../../assets/images/2021/2021-07-27-code_design/image-20210823081514719.png)
 
 ### C程序的调试
 
