@@ -4,7 +4,7 @@ title: 高级预言程序设计的学习笔记汇总
 category: 自考计算机科学与技术
 tags: [高级预言程序设计]
 excerpt: 高级预言程序设计的学习笔记汇总
-typora-root-url: ..\..
+typora-root-url: ..
 ---
 
  
@@ -212,7 +212,7 @@ the result is:15
 
 ### C语言的运行步骤
 
-![image-20210823081514719](../../assets/images/2021/2021-07-27-code_design/image-20210823081514719.png)
+![image-20210823225300195](/../assets/images/2021/2021-07-27-code_design/image-20210823225300195.png)
 
 ### C程序的调试
 
@@ -246,5 +246,5 @@ the result is:15
 
 ### C语言的数据类型及其关系图
 
-<a href='https://github.com/sorryle/sorryle.github.io/blob/main/assets/files/file/date_type.xmind'>数据类型逻辑图</a>
+<a href='https://github.com/sorryle/sorryle.github.io/blob/main/assets/files/file/data_type.xmind'>数据类型逻辑图</a>
 

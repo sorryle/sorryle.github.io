@@ -15,6 +15,8 @@ typora-root-url: ..
 
 
 
+![img](../../assets/images/2021/2021-01-28-blog-latex/20200708163549471.png)
+
 ![img](/../assets/images/2021/2021-01-27-blog-total/20200708163549471.png)
 
 ![img](/../assets/images/2021/2021-01-27-blog-total/20200708163549468.png)

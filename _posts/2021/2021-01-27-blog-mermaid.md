@@ -4,6 +4,7 @@ title: Jekyll添加流程图
 category: 博客
 tags: [博客, javascript]
 excerpt: 由于Yummy Jekyll模板不支持mermaid语法绘制的流程图，所以对框架进行一个扩展
+typora-root-url: ..
 ---
 
 

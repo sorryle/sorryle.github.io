@@ -4,6 +4,7 @@ title: Liquidj基础语法汇总
 category: 博客
 tags: [博客,Liquid]
 excerpt: 由于有一些需要进行定制，所以进行Liquidj的语法进行一个学习，这样就不会看到这玩意就头大
+typora-root-url: ..
 ---
 
 
