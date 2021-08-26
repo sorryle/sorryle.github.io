@@ -364,7 +364,7 @@ the result is:15
 2. 变量的三个要素：
    - 变量名：每个变量都必须有一个名字~变量名，变量命名遵循标识符命名规则
    - 变量值：变量中所保存的数据称为该变量的值，在程序运行过程中，变量值存储在内存中。
-   - 变量类型：变量类型可以时任何一种数据类型。<a href='https://github.com/sorryle/sorryle.github.io/blob/main/assets/files/file/date_type.xmind'>数据类型Xmind文件</a>
+   - 变量类型：变量类型可以时任何一种数据类型。<a href='https://github.com/sorryle/sorryle.github.io/blob/main/assets/files/file/data_type.xmind'>数据类型Xmind文件</a>
    - 
 
  
