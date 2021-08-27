@@ -252,7 +252,7 @@ the result is:15
 
 <a href='https://github.com/sorryle/sorryle.github.io/blob/main/assets/files/file/data_type.xmind'>数据类型逻辑图文件下载</a>
 
-![image-20210824072127517](../../assets/images/2021/2021-07-27-code_design/image-20210824072127517.png)
+![image-20210824072127517](/../assets/images/2021/2021-07-27-code_design/image-20210824072127517.png)
 
 
 
@@ -365,7 +365,53 @@ the result is:15
    - 变量名：每个变量都必须有一个名字~变量名，变量命名遵循标识符命名规则
    - 变量值：变量中所保存的数据称为该变量的值，在程序运行过程中，变量值存储在内存中。
    - 变量类型：变量类型可以时任何一种数据类型。<a href='https://github.com/sorryle/sorryle.github.io/blob/main/assets/files/file/data_type.xmind'>数据类型Xmind文件</a>
-   - 
 
  
+
+**变量定义和初始化**
+
+- `数据类型符 变量名1 [,变量名2,...];`
+- 说明：对变量的定义可以放在函数之外，也可以放在函数体中或复合语句中。如果时放在函数体或复合语句中，则必须集中放在最前面
+  （埋坑：变量未赋值使用会怎样）
+- 说明：值在-128和127之间的`int`、`short`、`long`的变量  ==  `字符型变量`
+              值在0~255之间的`unsigned`、`unsigned short`、`unsigned long`的变量   == 字符型变量
+
+```c
+int r, s; //定义2个有符号基本整型变量
+short m, n;  // 定义2个有符号的短整型变量
+long p, q; //定义2个有符号长整型变量
+unsigned i, j, k; //定义3个无符号基本整型变量
+float r, s; //定义2个单进度实型变量
+double f1, f2; //定义2个双精度实型变量
+char c1, c2; //定义2个字符型变量，全局变量，作用域整个文件
+
+
+void main(){
+    int me=2; //定义在函数之内的变量，作用域只在函数内
+    {int fu;
+     fu = me +c1; //定义在复合语句的变量，作用域只在复合语句中
+    }
+}
+```
+
+
+
+```c
+#include <stdio.h>
+
+/*
+说明：
+值在-128和127之间的`int`、`short`、`long`的变量  ==  `字符型变量`
+值在0~255之间的`unsigned`、`unsigned short`、`unsigned long`的变量   == 字符型变量
+*/
+
+void main(void){   
+	char a =97;
+	printf("The value of a: %c", a);
+}
+
+/*result：
+The value of a: a
+*/
+```
 
