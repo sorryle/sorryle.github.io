@@ -48,6 +48,7 @@ menu: 我的书签
 - [猫云](https://www.bootcdn.cn/) - 收录了很多前端开源项目，有`vue`、`jquery`的各种版本的`js`
 - [TseterHome](https://testerhome.com/) - 感觉上这是一个测试人很好用的一个社区
 - [LeetCode](https://leetcode-cn.com/) - 算法网站
+- [OWASP搭建教程](https://www.cnblogs.com/echoDetected/p/12249892.html) - 搭建OWASP教程网站，渗透用靶场
 
 ## 区块链
 
