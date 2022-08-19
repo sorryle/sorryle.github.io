@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 高级预言程序设计的学习笔记汇总
+title: 高级语言程序设计的学习笔记汇总
 category: 自考计算机科学与技术
-tags: [高级预言程序设计]
-excerpt: 高级预言程序设计的学习笔记汇总
+tags: [高级语言程序设计]
+excerpt: 高级语言程序设计的学习笔记汇总
 typora-root-url: ..
 ---
 
@@ -85,8 +85,7 @@ C语言的字符集是`ASCII`。主要包含下列四类：
 - **函数调用语句：**形如`函数名(实际参数表)`的语句，功能市调用指定函数 -`a = avg*(x,y,z);`
 - **表达式语句：**仅由任何表达式组成的语句 - `c = a+b;`
 - **流程控制语句：**用来控制程序执行过程的语句
-
-  - **选择控制语句：**`if() ~ else ~`   `switch`
+- **选择控制语句：**`if() ~ else ~`   `switch`
   - **循环控制语句：**`for() ~`  `while() ~`   `do ~ while()`
   - **中止语句:** `break`
   - **继续循环语句：**`continue`
@@ -671,7 +670,7 @@ $$
 
 $$
 73 =  9 \times8 + 1 \\
-=0121
+=0121
 $$
 
 
@@ -1299,7 +1298,7 @@ void main(){
 
 【说明】
 
-1. `putcharr(ch`函数只能用于单个字符的输出，依次输出一个字符。
+1. `putcharr(ch`函数只能用于单个字符的输出，依次输出一个字符。 
 2. 若程序中用到`putchar(ch)` ，则在程序的开头加上`#include <stdio.h>`
 
 ```c
@@ -1450,4 +1449,590 @@ ms= test, -ms=test   , nlf=0.12, ns=te
 | 无符号整型数据   | %u       |
 | 无符号长整型数据 | %lu      |
 | 字符型数据       | %c       |
+
+
+
+
+
+**格式输入函数**
+
+【格式】`scanf(格式控制字符串， 输入项首地址表)`
+
+【功能】从键盘按照“格式控制字符串”中规定的格式读取若干格数据，按“输入变量地址表”中变量的顺序依次存入对应的变量。
+
+【参数】“格式控制字符串是由控制输入格式的字符组成的字符串，“输入项首地址表”由用逗号分隔的若干个输入项首地址组成。
+
+【说明】
+
+1. `scanf()`函数的格式说明符的一般形式如：`%[*][m][h|l]格式字符 `
+2. 如果相邻两个格式字符之间，没有指定数据分隔符（如逗号、冒号等），则相应的两个输入数据之间，至少用一个空格分开，或者用`<Tab>`键分开，或者输入一个数据后按回车，然后在输入下一个数据
+3. ”格式控制字符串中出现普通字符（包括转义字符），务必原样输入。 
+4. 在以%d、%f、%lf、%e输入数值型数据时遇到以下情况，系统认为数据输入结束。
+   - 遇到空格或回车或`<Tab>`键时输入结束，可用它们作为数据之间的分隔符
+   - 遇到宽度结束，例如`%3d`只取3列，即系统自动按域宽截取所需数据
+   - 遇到输入数据与格式说明类型不一致，则输入结束 
+   - 遇到非法输入结束。例如在输入数值型数据时，遇到字母等非数值符号。
+   - 以`"%C"`输入单个字符，空格，回车和转义字符均作为有效字符输入，因此输入的数据之间不需要分隔符。
+   - 输入实型时不能规定精度。
+   - 赋值抑制字符`*`。 赋值抑制字符表示本输入项对应的数据读入后，不赋予相应变量
+
+| 格式字符    | 含义                                                         |
+| ----------- | ------------------------------------------------------------ |
+| d           | 以十进制有符号形式输入整型数据                               |
+| o           | 以八进制无符号形式输入整型数据                               |
+| x           | 以十六进制无符号形式输入整型数据                             |
+| c           | 输入一个字符（空格，回车和制表符都作为有效字符输入）         |
+| s           | 将一个字符串输入到字符串数组中，当遇到第一个空白字符（空格、回车、制表符）时结束 |
+| f、e        | 输入实型数据                                                 |
+| l           | 在格式话字符d、o、x、u之前，输入长整型数据；<br />在格式字符e、f、g之前，输入双精度实型数据 |
+| m（正整数） | 指定输入数据所占的域宽，可附在格式字符d、o、x、f、e之前      |
+| *           | 表示本输入项在输入后不赋予相应的变量                         |
+
+| 数据类型         | 输出格式 |
+| ---------------- | -------- |
+| 有符号整型数据   | %d       |
+| 有符号长整型数据 | %ld      |
+| 单精度实型数据   | %f       |
+| 字符型数据       | %c       |
+| 无符号整型数据   | %u       |
+| 无符号长整型数据 | %lu      |
+| 双精度实型数据   | %lf      |
+| 字符串数据       | %s       |
+
+
+
+```c
+#include <stdio.h>
+void main(){
+	int num1, num2;
+	//指定分隔符
+	printf("inpurt num,num:\n");
+	scanf("%d,%d", &num1, &num2);
+	printf("%d,%d\n", num1, num2);
+
+	//不指定分隔符，
+	printf("inpurt numnum:\n");
+	scanf("%d%d", &num1, &num2);
+	printf("%d%d\n", num1, num2);
+
+	
+	//指定域宽输入
+	printf("inpurt numnum:\n");
+	scanf("%3d%3d", &num1,&num2);
+	printf("%d,%d\n", num1,num2);
+	
+	//*不赋予相应变量
+	printf("inpurt numnum:\n");
+	scanf("%*3d,%3d", &num1);
+	printf("%d\n", num1);
+	
+}
+/*
+inpurt num,num:
+1,2
+1,2
+inpurt numnum:
+3 4
+34
+inpurt numnum:
+123456
+123,456
+inpurt numnum:
+123,456
+456
+*/
+```
+
+
+
+例子：输入一个十进制数，输出该数的八进制和十六进制
+
+```c
+#include <stdio.h>
+void main(){
+	int num;
+	scanf("%d", &num);
+	printf("o=%o\n", num);
+	printf("x=%x\n", num);
+}
+
+/*
+78
+o=116
+x=4e
+*/
+```
+
+
+
+例子：从键盘中输入小写字母，然后转换成大写字母
+
+```c
+#include <stdio.h>
+void main(){
+	char c1;
+	scanf("%c", &c1);
+	printf("upper: %c", c1-32);
+}
+
+/*
+a
+upper: A
+*/
+```
+
+
+
+### 选择结构
+
+**单分支选择语句**
+
+【格式】`if (表达式) 语句;`
+
+【功能】计算表达式的值，如果为真（非0），则执行语句；否则不执行语句
+
+【说明】
+
+1. 表达式可以是任何类型，常用的是关系表达式或逻辑表达式。
+2. 语句可以是任何语句（不能是数据定义语句），当然也可以另一个if语句（称嵌套if语句）.
+
+例子：从键盘输入一个整数，求其绝对值并输出。
+
+```c
+#include <stdio.h>
+void main(){
+	int num; 
+	scanf("%d", &num);
+	if (0>num)num=-num;
+	printf("%d", num);	
+}
+/*
+-234421
+234421
+*/
+```
+
+
+
+**双分支选择语句**
+
+【格式】`if (表达式) 语句1; else 语句2;`
+
+【功能】计算表达式的值，如果为真（非0）则执行语句1, 否则执行语句2.
+
+例子：从键盘输入一个数，判断奇偶。
+
+```c
+#include <stdio.h>
+void main(){
+ 	int num;
+    scanf("%d", &num);
+    if (num % 2 == 0) printf("this even numer");
+    else printf("this odd number");
+}
+```
+
+
+
+例子：从键盘输入一个年份year(四位十进制整数)，判断其是否是闰年（闰年的判断条件是能被4整除、但不能被100整除，或者能被400整除）
+
+```c
+#include <stdio.h>
+void main(){
+    int year;
+    scanf("%4d", &year);
+    if ((year%4==0 && year%100!=0) || year%400==0) printf("this year is leap year;");
+    else printf("this year not leap year;");
+}
+```
+
+
+
+
+
+**分支嵌套**
+
+【注意】：
+
+- 在设计嵌套的`"if语句"`和`“if-else语句”`要特别注意`else`是和前面出现的哪个`if`配对
+- 程序段中`else`是和前面最近的没有配对的`if`配对。复合语句中`if-else`独立处理
+
+```c
+// if语句的嵌套
+if(表达式1)
+    if(表达式2) 语句1;
+    else 语句2;
+else 
+    if(表达式3) 语句3;
+    else 语句4;
+```
+
+![image-20220819141748235](/../assets/images/2021/2021-07-27-code_design/image-20220819141748235.png)
+
+```c
+// if else if语句的嵌套
+if (表达式1) 语句1;
+else if(表达式2) 语句2;
+else if(表达式3) 语句3;
+.....
+else if(表达式n) 语句n;
+else 语句n+1;
+```
+
+![image-20220819142001762](/../assets/images/2021/2021-07-27-code_design/image-20220819142001762.png)
+
+
+
+【例子】求一元二次方程ax2+bx+c=0的解。
+
+![image-20220819171128017](/../assets/images/2021/2021-07-27-code_design/image-20220819171128017.png)
+
+```c
+#include <stdio.h>
+#include <math.h>
+int main(void){
+	float a,b,c,d,x1,x2,p,q;
+	printf("inpurt a,b,c=?");
+	scanf("%f,%f,%f",&a,&b,&c);
+	if(fabs(a)<=1e-6)printf("is now quadratic");
+	/*判断实数a等于0的方法，不能用a==0*/
+	else{ 
+		d=b*b-4*a*c;
+		if(fabs(d)<1e-6) //有两个相等实根
+		printf("has two equal roots:%8.4f\n", b/(2*a));
+	
+		else if(d>1e-6){ //有两个不相等实根
+			x1=(-b+sqrt(d))/(2*a);
+			x2=(-b-sqrt(d))/(2*a);
+			printf("x1=%8.4f,x2=%8.4f\n", x1, x2);
+		}else{  //实部和虚部
+			p=-b/(2*a); q=sqrt(-d)/(2*a);
+			printf("x1=%8.4f+%8.4f\n",p, q);
+			printf("x1=%8.4f-%8.4f\n",p, q);
+		}
+	}
+	return 0;
+}
+```
+
+
+
+```c
+//迷惑人的格式，实际上else和第二个if配套
+if(c>='0'&&c<<='9')
+   if(c=='5') y=0;  
+else y=1;
+
+//这个if和else是配套的
+if(c>='0'&&c<='9')
+    if(c=='5')y=0;
+	else y=1;
+```
+
+
+
+
+
+**多分支选择语句**
+
+【格式】
+
+```c
+switch (表达式){
+    case 常量表达式1: 语句1; break;
+    case 常量表达式2: 语句组2; break;
+    ....
+    case 常量表达式n: 语句组n; break;
+    default: 语句组n+1;
+}
+```
+
+【说明】
+
+1. swich后面的表达式常用的字符型或整型表达式
+2. 常量表达式是由常量或符号常量组成的表达式，所有常量表达式值必须互不相同
+3. `break`在`switch`语句中的作用是: 执行完某个语句组后，将推出该`switch`语句。如果省略`brack`语句，则执行完某个语句组后，将连续执行其后的所有语句组，直到遇到`break`或多分支语句结束。
+4. `default`及其后的语句组可以省略。省略时，若表达式的值和n个常量表达式均不相同，则该语句什么也不做。
+
+![image-20220819172135077](/../assets/images/2021/2021-07-27-code_design/image-20220819172135077.png)`
+
+```c
+#include <stdio.h>
+void main(){
+	int year, month, days;
+	printf("inpurt year,month:\n");
+	scanf("%d,%d", &year, &month);
+	switch(month){
+		case 1:
+		case 3:
+		case 5:
+		case 7:
+		case 8:
+		case 10:
+		case 12: days=31;break;
+		case 4:
+		case 6:
+		case 9:
+		case 11:days=30;break;
+		case 2: 
+			if ((year%4==0 && year%100!=0) || year%400==0) days=29;// 闰年
+			else days=28; break;//平年
+		default:printf("month is error\n");
+	}
+	printf("year=%d,month=%d,days=%d\n", year,month,days);
+
+}
+/*
+inpurt year,month:
+2001,7
+year=2001,month=7,days=31
+*/
+```
+
+
+
+### 循环结构
+
+**while语句**
+
+【格式】`while (表达式) 语句;`
+
+【功能】计算表达式值，为真(非)则执行语句；反复执行上述操作，直到表达式值为假（0）时止。
+
+【说明】
+
+1. 表达式称为"循环控制条件", 可以是任何类型的表达式，常用关系或逻辑表达式。
+2. 先判断后执行循环体。即表达式不成立时，循环体最少执行执行0次。
+3. 循环控制条件永远成立时，是死循环。 如`while (1)`
+
+![image-20220819174610343](/../assets/images/2021/2021-07-27-code_design/image-20220819174610343.png)
+
+例子：利用`while`语句实现计算1+2+..+100之和。
+
+```c
+#include <stdio.h>
+void main(){
+	int n=0, sum;
+	while (n!=101){
+		sum+=n;
+		n++;
+	}
+	printf("%d", sum);
+}
+```
+
+
+
+
+
+**do-while语句**
+
+`do-while`用来实现直到型循环结构
+
+【格式】`do 语句 while (表达式);`
+
+【功能】先执行语句，然后计算表达式的值；若表达式值为假（0）则推出循环，表达式值为真（非0）继续循环。 
+
+【说明】先执行循环体，再判断循环控制条件。适用于无论循环控制条件是否成立，先执行一次循环体的情形，循环体最少执行一次。
+
+![image-20220819175449139](/../assets/images/2021/2021-07-27-code_design/image-20220819175449139.png)
+
+例子：利用`do-while`语句实现1+2+....+100之和
+
+```c
+#include <stdio.h>
+void main(){
+	int num=1, sum;
+    do {
+        sum+=num;
+    	num++;}
+    while(num!=101);
+    printf("%d", sum);
+}
+```
+
+例子：将一个正整数的各位数字逆序输出
+
+```c
+#include <stdio.h>
+void main(){
+    int num;
+	scnaf("%d", &num);
+    do {
+       printf("%d", num%10);
+    }while (num/=10!=0);
+}
+```
+
+
+
+**for语句**
+
+【格式】`for (表达式1; 表达式2; 表达式3) 语句;` 
+
+【功能】
+
+1. 计算表达式1，实现变量赋初值。
+2. 计算表达式2，如果其值非0，则执行（3），否则推出`for`循环
+3. 执行语句,并计算表达式3，然后转至（2）；
+
+【说明】
+
+1. `for`语句主要用来实现次数型循环结构。
+2. 表达式1可以是任何类型。注意表达式1后面有一个分号。表达式1可以省略、
+3. 表达式2称为"控制循环条件"，可以是任何类型，常用关系或逻辑表达式。注意表达式2后面右一个分号。表达式2可以省略。省略时，是”死循环“.
+4. 表达式3可以是任何类型的。注意表达式3后面没有分号。表达式3可以省略
+5. 表达式1和3都省略，`for`循环相当于`while`循环。 
+
+![image-20220819183012923](/../assets/images/2021/2021-07-27-code_design/image-20220819183012923.png)
+
+例子：计算n的阶乘$n!=1\times2\times...\times n$
+
+```c
+#include <stdio.h>
+void main(){
+    int i,n;
+    long fact=1;
+    scanf("%d", &n);
+    for(i=1; i<=n; i++) fact*=i;
+    printf("%ld", fact);
+
+}
+```
+
+例子：从键盘上输入若干个整数，求其中最大数和最小数。直到输入的数为0时结束。
+
+```c
+void main(){
+    int x, max=0, min=0;
+   	do {
+   		printf("impurt numer;\n");
+        scanf("%d", &x);
+		max=x>max?x:max;
+        min=x<min?x:min;
+    }while(x!=0);
+    printf("max=%d, min=%d", max, min);
+}
+```
+
+
+
+
+
+**break语句**
+
+【格式】`break;`
+
+【功能】强制结束本层的循环，不再执行循环体的`break`后面的语句。
+
+【说明】
+
+1. `break`语句只能再三条循环语句的循环体或`switch`语句中。
+2. 通常`break`语句是和`if`语句配合使用，从而构成第二个结束循环条件。
+
+![image-20220819205725498](/../assets/images/2021/2021-07-27-code_design/image-20220819205725498.png)
+
+
+
+
+
+`continue语句`
+
+【格式】`conitnue;`
+
+【功能】跳过`continue`之后的语句，重新判断循环控制条件，决定是否继续循环。
+
+【说明】
+
+1. `continue`语句只能用在三条循环语句的循环体中。
+2. 通常`continue`语句是和`if`语句配合使用，从而构成其后的部分循环体是否执行的单分支接哦古。
+
+![image-20220819205940199](/../assets/images/2021/2021-07-27-code_design/image-20220819205940199.png)
+
+
+
+例子：从键盘输入不多于10个实数，求这些数的总和及其中正数的总和。若不足10个数，则以输入0作为结束。
+
+```c
+#include <math.h>
+#include <stdio.h>
+void main(){
+    float sum, psum, x;
+    int i;
+    for(i=0; i<10; i++){
+    	printf("inpurt float numer;");
+        scanf("%f", &x);
+        if(fabs(x)<1e-6) break;
+        sum += x;
+        if(x<0)continue;
+        psum+=x;
+        
+    }
+    printf("sum=%.5f, psum=%.5f", sum, psum);
+
+}
+```
+
+
+
+**循环的嵌套**
+
+- 循环语句的循环体内又包含另一个完整的循环结构。
+- 循环嵌套的层数是任意的。
+- 内层循环必须完整地包含再外层循环的循环体中，不能出现内、外层循环体交叉的情况。
+- `for`语句、`while`语句和`do-while`语句都允许循环嵌套。
+
+例子：用100元买100只鸡，其中公鸡5元一只，母鸡3元一只，小鸡1元3只，问公鸡、母鸡和小鸡各买多少只？
+
+```c
+#include <stdio.h>
+void main(){
+    int i,j,z;
+    for(i=0; i<=20; i++)
+        for(j=0; j<=33; j++){
+           z=(100-(i*5+j*3))/3;
+           if((100-(i*5+j*3))%3==0 && z>=0) printf("i=%d,j=%d,z=%d\n",i,j,z);
+        }
+}
+```
+
+
+
+例子：求`Fibonacci`数列的前40个数。
+
+```c
+ #include <stdio.h>
+void main(){
+    long int f1=1,f2=1;
+    int i=1;
+    for(;i<=20, i++){
+        printf("%15ld%15ld", f1,f2);
+        if(i%2==0)printf("\n");
+        f1+=f2; f2+=f1;
+    }
+}
+```
+
+
+
+例子：计算1!+2!+3!+....n!
+
+```c
+#include <stdio.h>
+void main(void){
+    int n=0, i=0, j=0;
+    long result=0;
+    printf("Entern n:");
+    scanf("%d", &n);
+    for (i=1; i<=n; i++){
+        int tem=1;
+        for(j=i; j>0; j--) tem=tem*j;
+        result=result+tem;
+    }
+   printf("The result is %ld \n", result);
+   return 0;
+}
+```
+
+
 
