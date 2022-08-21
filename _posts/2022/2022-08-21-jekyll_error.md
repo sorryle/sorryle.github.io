@@ -9,7 +9,7 @@ typora-root-url: ..
 
 
 
-
+{% raw %}
 
 ### Jekyll解析代码块中数组导致错误
 
@@ -41,4 +41,8 @@ jekyll 3.0.1 | Error:  Liquid syntax error: Variable '{{1,2,3}' was not properly
 - 报错后先使用二分法定位出具体有哪几处存在这种问题
 - 定位出问题后上网百度是是否存在具体解决方案
   - 第一个方法，这个方法亲测不行：[部署Page时报错: Liquid syntax error: Variable '{{0, 0}' was not properly terminated with regexp: /\}\}/ · Issue #I1BLTM · 开源中国/Gitee Feedback - Gitee.com](https://gitee.com/oschina/git-osc/issues/I1BLTM)
-  - 第二个方法：：[GitHub 博客-- Jekyll--代码高亮，Liquid 转义字符_淡竹云开的博客-CSDN博客](https://blog.csdn.net/zhangpeterx/article/details/103920538)  （我刚博客的时候好像遇到类似的问题，就是用添加这个标签解决的.....）
+  - 第二个方法：：[GitHub 博客-- Jekyll--代码高亮，Liquid 转义字符_淡竹云开的博客-CSDN博客](https://blog.csdn.net/zhangpeterx/article/details/103920538)  （我刚创建博客的时候好像遇到类似的问题，就是用添加这个标签解决的.....）
+
+
+
+{% endraw %}
