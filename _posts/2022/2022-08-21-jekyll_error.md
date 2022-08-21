@@ -19,6 +19,8 @@ typora-root-url: ..
 jekyll 3.0.1 | Error:  Liquid syntax error: Variable '{{1,2,3}' was not properly terminated with regexp: /\}\}/
 ```
 
+{% endraw %}
+
 ![image-20220821101852369](/../assets/images/2021/2022-08-21-jekyll_error/image-20220821101852369.png)
 
 【原因】
@@ -32,7 +34,7 @@ jekyll 3.0.1 | Error:  Liquid syntax error: Variable '{{1,2,3}' was not properly
 
 ![image-20220821102448577](/../assets/images/2021/2022-08-21-jekyll_error/image-20220821102448577.png)
 
-
+{% raw %}
 
 【耗时】2小时
 
