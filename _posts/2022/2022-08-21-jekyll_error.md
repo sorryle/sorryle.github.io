@@ -29,7 +29,7 @@ jekyll 3.0.1 | Error:  Liquid syntax error: Variable '{{1,2,3}' was not properly
 
 【解决办法】
 
-- 【方法】在报错处添加一个标签 ``{% raw %} 报错处 {% endraw %}``
+- 【方法】在报错处添加一个标签 ![image-20220821113856662](/../assets/images/2021/2022-08-21-jekyll_error/image-20220821113856662.png)  **备注：左边是图片，放入标签直接不显示**
 - 【解决原因】添加这个标签后`Jekyll`不会继续解析这部分内容了
 
 ![image-20220821102448577](/../assets/images/2021/2022-08-21-jekyll_error/image-20220821102448577.png)
